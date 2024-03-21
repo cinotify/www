@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Integrations
+permalink: /docs/integrations/
 ---
 
 # Integrations
@@ -19,9 +20,9 @@ notifications from GitHub Actions, CircleCI, or the REST API. Here's one example
 ```yaml
 uses: cinotify/github-action@main
 with:
-  to: 'email-abc123456@mycompany.org.slack.com'
-  subject: 'building main'
-  body: 'This is a notification from GitHub actions.'
+  to: "email-abc123456@mycompany.org.slack.com"
+  subject: "building main"
+  body: "This is a notification from GitHub actions."
 ```
 
 ## Microsoft Teams
@@ -34,7 +35,7 @@ notifications from GitHub Actions, CircleCI, or the REST API. Here's one example
 ```yaml
 uses: cinotify/github-action@main
 with:
-  to: 'email-abc123456@mycompany.org'
-  subject: 'building main'
-  body: 'This is a notification from GitHub actions.'
+  to: "email-abc123456@mycompany.org"
+  subject: "building main"
+  body: "This is a notification from GitHub actions."
 ```

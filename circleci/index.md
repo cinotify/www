@@ -1,13 +1,14 @@
 ---
 title: CircleCI
 layout: page
+permalink: /docs/circleci/
 ---
 
 # CircleCI
 
 <a target="_blank" href="https://circleci.com/developer/orbs/orb/cinotify/email">View on Orb Registry</a>
-    &middot;
-    <a target="_blank" href="https://github.com/cinotify/circleci-orb">View Source</a>
+&middot;
+<a target="_blank" href="https://github.com/cinotify/circleci-orb">View Source</a>
 
 Here is an example of how to start sending emails from within a CircleCI workflow, no matter the environment.
 
@@ -19,7 +20,7 @@ workflows:
   example-workflow:
     jobs:
       - email/send:
-          body: 'Configure this notification at https://www.cinotify.cc/'
+          body: "Configure this notification at https://www.cinotify.cc/"
           subject: CircleCI job started
           to: example@example.com
 ```

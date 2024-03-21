@@ -1,6 +1,7 @@
 ---
 layout: page
 title: npm
+permalink: /docs/npm/
 ---
 
 # npm
@@ -13,10 +14,10 @@ A JavaScript client is provided via npm.
 ## Usage
 
 ```js
-const {email} = require("@cinotify/js");
+const { email } = require("@cinotify/js");
 email({
-  to: 'example@example.com',
-  subject: 'hello',
-  body: 'hey there from js'
-})
+  to: "example@example.com",
+  subject: "hello",
+  body: "hey there from js",
+});
 ```

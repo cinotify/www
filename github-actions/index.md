@@ -2,6 +2,7 @@
 title: GitHub Actions
 layout: page
 nav_order: 1
+permalink: /docs/github-actions/
 ---
 
 # GitHub Actions
