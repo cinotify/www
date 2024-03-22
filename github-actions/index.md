@@ -23,7 +23,8 @@ jobs:
         with:
           to: "example@example.com"
           subject: "building main"
-          body: "This is a notification from GitHub actions."
+          body: "<em>This is a notification from GitHub actions.</em>"
+          type: "text/html"
 ```
 
 There is also the [starter template](https://github.com/cinotify/github-actions-example) which can be used as a starting point for setting up a GitHub Actions Workflow with email notifications.

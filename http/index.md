@@ -12,12 +12,13 @@ The HTTP API is how emails are sent from Continuous Integration environments.
 
 ### Parameters
 
-| name        | type   | required |
-| ----------- | ------ | -------- |
-| to          | string | true     |
-| subject     | string | true     |
-| body        | string | false    |
-| attachments | array  | false    |
+| name        | type   | required                      |
+| ----------- | ------ | ----------------------------- |
+| to          | string | true                          |
+| subject     | string | true                          |
+| body        | string | false (default: ' ')          |
+| attachments | array  | false (default: undefined)    |
+| type        | string | false (default: 'text/plain') |
 
 #### Attachments
 
@@ -52,5 +53,18 @@ curl -X POST 'https://www.cinotify.cc/api/notify' \
         "filename": "hello.txt"
       }
     ]
+  }'
+```
+
+#### HTML Email
+
+```bash
+curl -X POST 'https://www.cinotify.cc/api/notify' \
+  -H "Content-Type: application/json" \
+  -d '{
+    "body": "<em>hello</em>",
+    "subject": "example html email",
+    "to": "example@example.com",
+    "type": "text/html"
   }'
 ```
