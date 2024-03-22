@@ -13,5 +13,5 @@ Typically, continuous integration tests and builds run within a docker container
 
 ```bash
 curl --request POST 'https://www.cinotify.cc/api/notify' \
-  -d "to=example@example.com&subject=building main&body=hello.&attachments[][type]=text/plain&attachments[][content]=aGVsbG8sIHdvcmxkIQ==&attachments[][filename]=hello.txt"
+  -d "to=example@example.com&subject=email body&body=<em>hello</em>.&type=text/html&attachments[][type]=text/plain&attachments[][content]=aGVsbG8sIHdvcmxkIQ==&attachments[][filename]=hello.txt"
 ```
